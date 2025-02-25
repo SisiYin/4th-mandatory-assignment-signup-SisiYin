@@ -24,7 +24,7 @@ export default function LoginView() {
       </View>
 
       <TouchableOpacity style={styles.signinButton} onPress={() => console.log('Signup clicked')}>
-        <Text style={styles.signinButtonText}>SIGN UP</Text>
+        <Text style={styles.signinButtonText}>LOGIN →</Text>
       </TouchableOpacity>
 
       <TouchableOpacity onPress={() => router.push('./signup')}>

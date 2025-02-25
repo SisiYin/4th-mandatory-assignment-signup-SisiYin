@@ -9,7 +9,7 @@ export default function SignupView() {
   return (
     <View style={styles.container}>
       <TouchableOpacity onPress={() => router.back()}>
-        <Text style={styles.backArrow}>←</Text>
+        <Text style={styles.backArrow}>← </Text>
       </TouchableOpacity>
 
       <Text style={styles.title}>Create Account</Text>
@@ -35,7 +35,7 @@ export default function SignupView() {
       </View>
 
       <TouchableOpacity style={styles.signupButton} onPress={() => console.log('Signup clicked')}>
-        <Text style={styles.signupButtonText}>SIGN UP</Text>
+        <Text style={styles.signupButtonText}>SIGN UP →</Text>
       </TouchableOpacity>
 
       <TouchableOpacity onPress={() => router.push('./login')}>
@@ -56,6 +56,7 @@ const styles = StyleSheet.create({
   backArrow: { 
     fontSize: 20, 
     color: 'gray', 
+    fontWeight: 'bold', 
     marginBottom: 10, },
   title: { 
     fontSize: 24, 
