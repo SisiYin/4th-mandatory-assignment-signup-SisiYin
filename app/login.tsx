@@ -18,6 +18,9 @@ export default function LoginView() {
       <View style={styles.inputContainer}>
         <Ionicons name="lock-closed-outline" size={20} color="gray" style={styles.icon} />
         <TextInput style={styles.input} placeholder="PASSWORD" secureTextEntry />
+        <TouchableOpacity onPress={() => router.push('./signup')}>
+          <Text style={styles.forgotText}>FORGOT</Text>
+        </TouchableOpacity>
       </View>
 
       <TouchableOpacity style={styles.signinButton} onPress={() => console.log('Signup clicked')}>
@@ -75,4 +78,10 @@ const styles = StyleSheet.create({
     fontSize: 18,               
     fontWeight: 'bold',
   },
+  forgotText: {
+    color: 'orange',
+    fontSize: 14,
+    fontWeight: 'bold',
+    marginLeft: 10,
+  }
 });
